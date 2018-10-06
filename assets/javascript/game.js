@@ -1,6 +1,6 @@
 // --- Variables ---
 
-var psychicLetter = "";
+var computerChoice = "";
 var userGuess = "";
 var numberGuesses = 0;
 var lettersGuessed = [];
@@ -14,47 +14,48 @@ var letters = [
 
 // --- Functions ---
     
-function psychicRandomLetter() {
-    return psychicLetter = letters[Math.floor(Math.random()*letters.length)];
+function randomLetterChoice() {
+    return computerChoice = letters[Math.floor(Math.random()*letters.length)];
 } 
 
 function resetGame () {
     numberGuesses=0;
     lettersGuessed=[];
-    psychicRandomLetter();
+    randomLetterChoice();
 }
 
 // --- Main Process ---
 
-// CALL function for computer/psychic to SELECT random letter
-psychicRandomLetter();
+// CALL function to SELECT random letter
+randomLetterChoice();
+    // console.log("Computer Letter: " + computerChoice);
 
 // user to SELECT letter via onkeyup
 document.onkeyup = function (event) {
     var userGuess = event.key.toLowerCase();
+        console.log("Computer Letter: " + computerChoice);
         console.log("User Guess: " + userGuess);
-        console.log("Psychic Letter: " + psychicLetter);
-    
-    // userGuess is VALID if key in letters array
+        
+        // userGuess is VALID if key in letters array
     if (letters.indexOf(userGuess.toLowerCase()) !== -1) {
         
         // user guesses incorrectly
-        if (userGuess !== psychicLetter) {
+        if (userGuess !== computerChoice) {
             numberGuesses++;
                 console.log("Number Guesses: " + numberGuesses);
             lettersGuessed.push(userGuess);
                 console.log(lettersGuessed);
 
         // user guesses correctly
-        } if (userGuess === psychicLetter) {
-            alert("You're psychic! You correctly guessed the letter '" + psychicLetter + "'!");
+        } if (userGuess === computerChoice) {
+            alert("You're psychic! You correctly guessed the letter '" + computerChoice + "'!");
             wins++;
                 console.log("Wins: " + wins);
             resetGame();
 
         // user runs out of guesses
         } if (numberGuesses === 7) {
-            alert("You're not psychic. The letter was '" +  psychicLetter + "'. Try again!");
+            alert("You're not psychic. The letter was '" +  computerChoice + "'. Try again!");
             losses++;
                 console.log("Losses: " + losses);
             resetGame();
