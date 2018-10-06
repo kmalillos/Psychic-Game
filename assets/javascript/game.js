@@ -72,8 +72,6 @@ document.onkeyup = function (event) {
     document.getElementById("letters-text").textContent = "Letters Guessed: " + lettersGuessed;
     document.getElementById("wins-text").textContent = "Wins: " + wins;
     document.getElementById("losses-text").textContent = "Losses: " + losses; 
-    // document.getElementById("userGuess-text").textContent = "Wins: " + userGuess-text;
-    // document.getElementById("psychicLetter-text").textContent = "Losses: " + psychicLetter-text; 
 }  
 
 

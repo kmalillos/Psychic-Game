@@ -1,0 +1,62 @@
+* {
+    
+}
+
+body {
+    background-image: url("../images/psychic-game-background.jpg");
+    font-family: "Times New Roman", Times, serif;
+    text-align: center;
+}
+
+.wrapper {
+    clear: both;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text-background {
+    background: #fff;
+    opacity: 0.80;
+    margin-top: 100px;
+    padding: 0 50px 0 50px;
+    height: 400px;
+    width: 50%;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: 700;
+    padding-top: 50px;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+h4 {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+
+p {
+    font-size: 18px;
+    font-weight: 150;
+}
+
+h1, h2, h3, h4, p {
+    padding-bottom: 10px;
+}
+
+
+
+
+
+
+
