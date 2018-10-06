@@ -35,7 +35,7 @@ document.onkeyup = function (event) {
         console.log("User Guess: " + userGuess);
         console.log("Psychic Letter: " + psychicLetter);
     
-    // user guess is VALID if key in letters array
+    // userGuess is VALID if key in letters array
     if (letters.indexOf(userGuess.toLowerCase()) !== -1) {
         
         // user guesses incorrectly
@@ -54,15 +54,14 @@ document.onkeyup = function (event) {
 
         // user runs out of guesses
         } if (numberGuesses === 7) {
-            console.log("GAME OVER");
-            alert("You're not psychic. The letter was " +  psychicLetter + ". Try again!");
+            alert("You're not psychic. The letter was '" +  psychicLetter + "'. Try again!");
             losses++;
                 console.log("Losses: " + losses);
             resetGame();
         }
     }
 
-    // user guess is NOT VALID if key in letters array  
+    // userGuess is NOT VALID if key in letters array  
     else {
     alert("Press any letter key from A to Z to play!");
     }
