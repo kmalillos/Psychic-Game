@@ -1,43 +1,79 @@
+// --- Variables ---
+
+var psychicLetter = "";
+var userGuess = "";
 var numberGuesses = 0;
 var lettersGuessed = [];
 var wins = 0;
 var losses = 0;
-var psychicLetter = "";
-var userGuess = "";
 
 var letters = [
     "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m",
     "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"
 ];
 
+// --- Functions ---
+    
+function psychicRandomLetter() {
+    return psychicLetter = letters[Math.floor(Math.random()*letters.length)];
+} 
+
 function resetGame () {
     numberGuesses=0;
     lettersGuessed=[];
-    psychicLetter="";
+    psychicRandomLetter();
 }
 
+// --- Main Process ---
+
+// CALL function for computer/psychic to SELECT random letter
+psychicRandomLetter();
+
+// user to SELECT letter via onkeyup
 document.onkeyup = function (event) {
     var userGuess = event.key.toLowerCase();
-    var psychicLetter = letters[Math.floor(Math.random()*letters.length)];
-
-    // if userGuess is not NOT (double-negative means it IS) in the letters[], game continues
+        console.log("User Guess: " + userGuess);
+        console.log("Psychic Letter: " + psychicLetter);
+    
+    // user guess is VALID if key in letters array
     if (letters.indexOf(userGuess.toLowerCase()) !== -1) {
         
-        if (userGuess === psychicLetter) {
+        // user guesses incorrectly
+        if (userGuess !== psychicLetter) {
+            numberGuesses++;
+                console.log("Number Guesses: " + numberGuesses);
+            lettersGuessed.push(userGuess);
+                console.log(lettersGuessed);
+
+        // user guesses correctly
+        } if (userGuess === psychicLetter) {
+            alert("You're psychic! You correctly guessed the letter '" + psychicLetter + "'!");
             wins++;
-            alert("Awesome! You correctly guessed the letter: " + psychicLetter + "! You're psychic!");
-        } else {
+                console.log("Wins: " + wins);
+            resetGame();
+
+        // user runs out of guesses
+        } if (numberGuesses === 7) {
+            console.log("GAME OVER");
+            alert("You're not psychic. The letter was " +  psychicLetter + ". Try again!");
             losses++;
-            alert("Sorry, you're not psychic. You picked: " + userGuess + ". The letter was: " + psychicLetter + ". Try again!");
+                console.log("Losses: " + losses);
+            resetGame();
         }
-
-        // access HTML elements
-        document.getElementById("wins-text").textContent = "Wins: " + wins;
-        document.getElementById("losses-text").textContent = "Losses: " + losses; 
-
-    } else {
-        alert("Press any letter key from A to Z to play!");
-        resetGame();
     }
-}
+
+    // user guess is NOT VALID if key in letters array  
+    else {
+    alert("Press any letter key from A to Z to play!");
+    }
+
+    // --- Access HTML Elements ---
+    document.getElementById("number-text").textContent = "Number of Guesses: " + numberGuesses;
+    document.getElementById("letters-text").textContent = "Letters Guessed: " + lettersGuessed;
+    document.getElementById("wins-text").textContent = "Wins: " + wins;
+    document.getElementById("losses-text").textContent = "Losses: " + losses; 
+    // document.getElementById("userGuess-text").textContent = "Wins: " + userGuess-text;
+    // document.getElementById("psychicLetter-text").textContent = "Losses: " + psychicLetter-text; 
+}  
+
 
