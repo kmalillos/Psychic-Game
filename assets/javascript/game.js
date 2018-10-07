@@ -2,7 +2,7 @@
 
 var computerChoice = "";
 var userGuess = "";
-var numberGuesses = 0;
+var numberGuesses = 7;
 var lettersGuessed = [];
 var wins = 0;
 var losses = 0;
@@ -19,7 +19,7 @@ function randomLetterChoice() {
 } 
 
 function resetGame () {
-    numberGuesses=0;
+    numberGuesses=7;
     lettersGuessed=[];
     randomLetterChoice();
 }
@@ -41,7 +41,7 @@ document.onkeyup = function (event) {
         
         // user guesses incorrectly
         if (userGuess !== computerChoice) {
-            numberGuesses++;
+            numberGuesses--;
                 console.log("Number Guesses: " + numberGuesses);
             lettersGuessed.push(userGuess);
                 console.log(lettersGuessed);
@@ -54,7 +54,8 @@ document.onkeyup = function (event) {
             resetGame();
 
         // user runs out of guesses
-        } if (numberGuesses === 7) {
+        } if (numberGuesses === 0) {
+            
             alert("You're not psychic. The letter was '" +  computerChoice + "'. Try again!");
             losses++;
                 console.log("Losses: " + losses);
@@ -68,10 +69,8 @@ document.onkeyup = function (event) {
     }
 
     // --- Access HTML Elements ---
-    document.getElementById("number-text").textContent = "Number of Guesses: " + numberGuesses;
+    document.getElementById("number-text").textContent = "Guesses Remaining: " + numberGuesses;
     document.getElementById("letters-text").textContent = "Letters Guessed: " + lettersGuessed;
     document.getElementById("wins-text").textContent = "Wins: " + wins;
     document.getElementById("losses-text").textContent = "Losses: " + losses; 
 }  
-
-
