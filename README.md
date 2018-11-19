@@ -1,31 +1,36 @@
-#Psychic-Game
+# Psychic-Game
 
-To play Psychic Game, the user tries to guess the letter that the computer is "thinking" within 7 guesses.
-The user wins by guessing the computer's letter within 7 guesses. 
-If the user does not guess the computer's letter within 7 guesses, the user loses.
+Test your psychic abilities! The User has (lucky number) seven tries to correctly guess the letter that the computer is "thinking."
 
-##How-It-Works
+### Try it out! [Link](https://kmalillos.github.io/Psychic-Game/)
 
-*At the start of each round, the computer randomly chooses a letter. 
+### Sample Demo: [Link](https://www.youtube.com/watch?v=qTc45Lox97g&feature=youtu.be)
 
-*The user tries to guess the computer's letter by pressing on any letter key from A to Z and the game begins.
+## How-It-Works
 
-*If the user does not guess correctly, the 'Number of Guesses' decreases by 1 and the letters the user guessed shows up in 'Letters Guessed' for up to 7 times.
+* At the start of each round, the computer randomly chooses a letter. 
 
-*When the user correcly guesses the letter, the user wins by 1 point. 
+* The user tries to guess the computer's letter by pressing on any letter key from A to Z and the game begins.
 
-*When the user runs out of guesses before correctly choosing the computer's letter, the user loses by 1 point.
+* If the user does not guess correctly, the 'Number of Guesses' decreases by 1 and the letters the user guessed shows up in 'Letters Guessed' for up to 7 times.
 
-*The game restarts once the user wins or loses.
+* When the user correcly guesses the letter, the user wins by 1 point. 
 
-##Built-With
+* When the user runs out of guesses before correctly choosing the computer's letter, the user loses by 1 point.
 
-*HTML
+* The game restarts once the user wins or loses.
 
-*CSS
+## Built-With
 
-*JavaScript
+* HTML
 
-##Contributor
+* CSS
 
-*Kaylah Malillos
+* JavaScript
+
+### Contributor
+
+Kaylah Malillos
+
+Portfolio: [Link](https://kmalillos.github.io/)
+
