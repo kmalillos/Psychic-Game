@@ -32,6 +32,7 @@ randomLetterChoice();
 
 // user to SELECT letter via onkeyup
 document.onkeyup = function (event) {
+    
     var userGuess = event.key.toLowerCase();
         console.log("Computer Letter: " + computerChoice);
         console.log("User Guess: " + userGuess);
@@ -73,4 +74,5 @@ document.onkeyup = function (event) {
     document.getElementById("letters-text").textContent = "Letters Guessed: " + lettersGuessed;
     document.getElementById("wins-text").textContent = "Wins: " + wins;
     document.getElementById("losses-text").textContent = "Losses: " + losses; 
-}  
+    
+};  

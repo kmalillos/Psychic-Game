@@ -4,6 +4,8 @@ Test your psychic abilities! The User has (lucky number) 7 tries to correctly gu
 
 ### Try it out! Live Page: [Link](https://kmalillos.github.io/Psychic-Game/)
 
+![Image]()
+
 ## How It Works
 
 * At the start of each round, the Computer randomly chooses a letter. 
@@ -14,21 +16,20 @@ Test your psychic abilities! The User has (lucky number) 7 tries to correctly gu
 * When the User runs out of guesses, the User loses by 1 point.
 * The game restarts once the User wins or loses.
 
-Sample Demo: [Link](https://www.youtube.com/watch?v=qTc45Lox97g&feature=youtu.be)
+**Sample Demo:** [Link](https://www.youtube.com/watch?v=qTc45Lox97g&feature=youtu.be)
 
 ## Developer Notes
 
-### Built-With
+**Built With**
 
-* HTML
-* CSS
 * JavaScript
 
-*
+
+
 
 ## Contributor
 
-### Kaylah Malillos
+**Kaylah Malillos**
 
 More about Kaylah: [Link](https://kmalillos.github.io/)
 
