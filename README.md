@@ -4,7 +4,7 @@ Test your psychic abilities! The User has (lucky number) 7 tries to correctly gu
 
 ### Try it out! Live Page: [Link](https://kmalillos.github.io/Psychic-Game/)
 
-![Image]()
+![Image](https://github.com/kmalillos/Psychic-Game/blob/master/assets/images/ReadMe-pic.JPG)
 
 ## How It Works
 
@@ -24,8 +24,15 @@ Test your psychic abilities! The User has (lucky number) 7 tries to correctly gu
 
 * JavaScript
 
+![Image](https://github.com/kmalillos/Psychic-Game/blob/master/assets/images/ReadMe-1.JPG)
 
+![Image](https://github.com/kmalillos/Psychic-Game/blob/master/assets/images/ReadMe-2.JPG)
 
+![Image](https://github.com/kmalillos/Psychic-Game/blob/master/assets/images/ReadMe-3.JPG)
+
+![Image](https://github.com/kmalillos/Psychic-Game/blob/master/assets/images/ReadMe-4.JPG)
+
+![Image](https://github.com/kmalillos/Psychic-Game/blob/master/assets/images/ReadMe-5.JPG)
 
 ## Contributor
 
