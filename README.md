@@ -1,36 +1,34 @@
 # Psychic-Game
 
-Test your psychic abilities! The User has (lucky number) seven tries to correctly guess the letter that the computer is "thinking."
+Test your psychic abilities! The User has (lucky number) 7 tries to correctly guess the letter that the Computer is "thinking."
 
-### Try it out! [Link](https://kmalillos.github.io/Psychic-Game/)
+### Try it out! Live Page: [Link](https://kmalillos.github.io/Psychic-Game/)
 
-### Sample Demo: [Link](https://www.youtube.com/watch?v=qTc45Lox97g&feature=youtu.be)
+## How It Works
 
-## How-It-Works
+* At the start of each round, the Computer randomly chooses a letter. 
+* The User tries to guess the Computer's letter by pressing on any letter key from 'a' to 'z.'
+* The letters selected by the User shows up in 'Letters Guessed' for up to 7 times (the number of guesses the User has to select the Computer's letter).
+* When the User correcly guesses the letter, the User wins by 1 point.
+* When the User incorrectly guesses the letter, the 'Number of Guesses' decreases by 1. 
+* When the User runs out of guesses, the User loses by 1 point.
+* The game restarts once the User wins or loses.
 
-* At the start of each round, the computer randomly chooses a letter. 
+Sample Demo: [Link](https://www.youtube.com/watch?v=qTc45Lox97g&feature=youtu.be)
 
-* The user tries to guess the computer's letter by pressing on any letter key from A to Z and the game begins.
+## Developer Notes
 
-* If the user does not guess correctly, the 'Number of Guesses' decreases by 1 and the letters the user guessed shows up in 'Letters Guessed' for up to 7 times.
-
-* When the user correcly guesses the letter, the user wins by 1 point. 
-
-* When the user runs out of guesses before correctly choosing the computer's letter, the user loses by 1 point.
-
-* The game restarts once the user wins or loses.
-
-## Built-With
+### Built-With
 
 * HTML
-
 * CSS
-
 * JavaScript
 
-### Contributor
+*
 
-Kaylah Malillos
+## Contributor
 
-Portfolio: [Link](https://kmalillos.github.io/)
+### Kaylah Malillos
+
+More about Kaylah: [Link](https://kmalillos.github.io/)
 
