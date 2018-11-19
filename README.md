@@ -1,8 +1,8 @@
-# Psychic-Game
+# Psychic Game
 
 Test your psychic abilities! The User has (lucky number) 7 tries to correctly guess the letter that the Computer is "thinking."
 
-### Try it out! Live Page: [Link](https://kmalillos.github.io/Psychic-Game/)
+### Live Page: [Link](https://kmalillos.github.io/Psychic-Game/)
 
 ![Image](https://github.com/kmalillos/Psychic-Game/blob/master/assets/images/ReadMe-pic.JPG)
 
