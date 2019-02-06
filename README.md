@@ -2,7 +2,7 @@
 
 Test your psychic abilities! The User has (lucky number) 7 tries to correctly guess the letter that the Computer is "thinking."
 
-### Live Page: [Link](https://kmalillos.github.io/Psychic-Game/)
+### Try It Out: [Live Page Here](https://kmalillos.github.io/psychic-game/)
 
 ![Image](https://github.com/kmalillos/Psychic-Game/blob/master/assets/images/ReadMe-pic.JPG)
 

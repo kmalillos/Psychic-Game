@@ -1,26 +1,27 @@
-* {
-    
+body {
+    /* background: no-repeat fixed center; */
+    background-attachment: fixed;
+    background-image: url("../images/psychic-game-background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 100px;
 }
 
-body {
-    background-image: url("../images/psychic-game-background.jpg");
-    font-family: "Times New Roman", Times, serif;
+.serif-font {
+    font-family: 'Playfair Display', serif;
+}
+
+.sans-font {
+    font-family: 'Lato', sans-serif;
+}
+
+h1, h2, h3, h4, p {
     text-align: center;
 }
 
-.wrapper {
-    clear: both;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.text-background {
-    background: #fff;
-    opacity: 0.80;
-    margin-top: 150px;
-    padding: 0 50px 0 50px;
-    height: 400px;
-    width: 50%;
+h1, h2, h3, h4 {
+    font-family: 'Playfair Display', serif;
 }
 
 h1 {
@@ -44,19 +45,45 @@ h4 {
     font-weight: 500;
 }
 
-
 p {
+    font-family: 'Lato', sans-serif;
     font-size: 20px;
     font-weight: 350;
 }
 
-h1, h2, h3, h4, p {
-    padding-bottom: 10px;
+.wrapper {
+    clear: both;
+    margin-left: auto;
+    margin-right: auto;
 }
 
+.text-background {
+    background: #fff;
+    opacity: 0.80;
+    margin-top: 150px;
+    padding: 0 50px 0 50px;
+    height: 400px;
+    width: 50%;
+}
 
+.sticky-footer {
+    /* display: block; */
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: auto;
+    width: 100%;
+}
 
-
-
+.footer-style {
+    background-color: #fff;
+    border-top: 3px double #000;
+    opacity: 0.55;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 25px;
+    padding: 10px;
+}
 
 
